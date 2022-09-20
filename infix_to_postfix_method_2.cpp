@@ -1,5 +1,6 @@
 #include <iostream>
 #include <stack>
+#include <string>
 using namespace std;
 char NextToken(string e)
 {
@@ -25,6 +26,10 @@ int isp(char ch)
     {
         return 1;
     }
+    else
+    {
+        return 8;
+    }
 }
 int icp(char ch)
 {
@@ -43,6 +48,10 @@ int icp(char ch)
     else if (ch == '(')
     {
         return 0;
+    }
+    else
+    {
+        return 8;
     }
 }
 void postfix(string str)
@@ -82,6 +91,8 @@ void postfix(string str)
 int main()
 {
     string s = "A*(B+C)-D/E";
+    s.push_back('\0');
+    s.push_back('\0');
     postfix(s);
     return 0;
 }
