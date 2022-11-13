@@ -55,6 +55,7 @@ int Stack_Imp::pop()
     if (top == NULL)
     {
         cout << "Element cannot be retrived as stack is empty" << endl;
+        return 0;
     }
     else
     {

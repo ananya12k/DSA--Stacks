@@ -80,11 +80,9 @@ int main()
 	bool is_Stack_empty_or_not = s1.is_Empty();
 	if (is_Stack_empty_or_not)
 	{
-		cout << "Stack is not empty" << endl;
-	}
-	else
-	{
 		cout << "Stack is empty" << endl;
 	}
+	else
+		cout << "Stack is not empty" << endl;
 	return 0;
 }
